@@ -1,1 +1,1 @@
-# -SmartANDJ-Predictor-Foot-Basket
+# SmartANDJ-Predictor-Foot-Basket
