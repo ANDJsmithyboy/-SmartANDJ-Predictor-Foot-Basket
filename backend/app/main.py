@@ -1,7 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
-from starlette.responses import JSONResponse
+from starlette.responses import JSONResponse, FileResponse
+from pathlib import Path
 
 from .routers import predict
 
@@ -23,12 +24,13 @@ def create_app() -> FastAPI:
 
     app.include_router(predict.router, prefix="/predict", tags=["Predictions"]) 
 
-    # Static UI (index.html) served at '/'
-    app.mount(
-        "/",
-        StaticFiles(directory=str(__file__).rsplit("/", 1)[0] + "/static", html=True),
-        name="static",
-    )
+    # Serve static assets under /static and index at '/'
+    static_dir = Path(__file__).parent / "static"
+    app.mount("/static", StaticFiles(directory=str(static_dir), html=False), name="static")
+
+    @app.get("/")
+    def index() -> FileResponse:
+        return FileResponse(static_dir / "index.html")
 
     @app.get("/healthz")
     def healthz() -> JSONResponse:
