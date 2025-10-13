@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartANDJ Predictor - IA Prédictive Sportive</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#f59e0b',
+                        accent: '#10b981'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-black/20 backdrop-blur-md border-b border-white/10 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-green-500 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-brain text-white text-xl"></i>
+                    </div>
+                    <span class="text-white text-xl font-bold">SmartANDJ Predictor</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="text-white/80 hover:text-white transition-colors">Fonctionnalités</a>
+                    <a href="#about" class="text-white/80 hover:text-white transition-colors">À propos</a>
+                    <a href="#contact" class="text-white/80 hover:text-white transition-colors">Contact</a>
+                </div>
+                <button class="bg-gradient-to-r from-blue-600 to-green-600 text-white px-6 py-2 rounded-full hover:from-blue-700 hover:to-green-700 transition-all duration-300 transform hover:scale-105">
+                    Accès Bêta
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center">
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">
+                    <span class="bg-gradient-to-r from-blue-400 via-green-400 to-yellow-400 bg-clip-text text-transparent">
+                        Prédictions IA
+                    </span>
+                    <br>
+                    <span class="text-white">Sportives</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-white/80 mb-8 max-w-3xl mx-auto">
+                    Découvrez l'avenir des prédictions sportives avec notre IA révolutionnaire pour le 
+                    <span class="text-yellow-400 font-semibold">Football</span> et le 
+                    <span class="text-orange-400 font-semibold">Basketball</span>
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <button class="bg-gradient-to-r from-blue-600 to-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-blue-700 hover:to-green-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                        <i class="fas fa-rocket mr-2"></i>
+                        Commencer maintenant
+                    </button>
+                    <button class="border-2 border-white/30 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white/10 transition-all duration-300">
+                        <i class="fas fa-play mr-2"></i>
+                        Voir la démo
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Floating Elements -->
+        <div class="absolute top-20 left-10 w-20 h-20 bg-blue-500/20 rounded-full blur-xl animate-pulse"></div>
+        <div class="absolute top-40 right-20 w-32 h-32 bg-green-500/20 rounded-full blur-xl animate-pulse delay-1000"></div>
+        <div class="absolute bottom-20 left-1/4 w-16 h-16 bg-yellow-500/20 rounded-full blur-xl animate-pulse delay-2000"></div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 px-4 sm:px-6 lg:px-8 bg-black/20">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                    Fonctionnalités <span class="text-green-400">Révolutionnaires</span>
+                </h2>
+                <p class="text-xl text-white/80 max-w-3xl mx-auto">
+                    Notre IA utilise des modèles de machine learning avancés pour des prédictions précises
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:scale-105">
+                    <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-futbol text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Prédictions Football</h3>
+                    <p class="text-white/80 mb-4">
+                        Prédictions précises pour LDC, Ligue 1, Premier League, Serie A avec scores, résultats 1X2, over/under, BTTS
+                    </p>
+                    <div class="flex items-center text-green-400">
+                        <i class="fas fa-check-circle mr-2"></i>
+                        <span class="text-sm font-semibold">Disponible</span>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:scale-105">
+                    <div class="w-16 h-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-basketball-ball text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Prédictions NBA</h3>
+                    <p class="text-white/80 mb-4">
+                        Analyse prédictive pour NBA et EuroLeague avec probabilités en temps réel et insights détaillés
+                    </p>
+                    <div class="flex items-center text-green-400">
+                        <i class="fas fa-check-circle mr-2"></i>
+                        <span class="text-sm font-semibold">Disponible</span>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:scale-105">
+                    <div class="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-brain text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">IA Avancée</h3>
+                    <p class="text-white/80 mb-4">
+                        Modèles XGBoost, Logistic Regression, LSTM et deep learning pour des prédictions ultra-précises
+                    </p>
+                    <div class="flex items-center text-yellow-400">
+                        <i class="fas fa-cog mr-2"></i>
+                        <span class="text-sm font-semibold">En développement</span>
+                    </div>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:scale-105">
+                    <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-globe text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Multilingue</h3>
+                    <p class="text-white/80 mb-4">
+                        Interface en français, anglais, espagnol et langues gabonaises pour une accessibilité maximale
+                    </p>
+                    <div class="flex items-center text-yellow-400">
+                        <i class="fas fa-cog mr-2"></i>
+                        <span class="text-sm font-semibold">En développement</span>
+                    </div>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:scale-105">
+                    <div class="w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Analytics Temps Réel</h3>
+                    <p class="text-white/80 mb-4">
+                        Probabilités calculées en temps réel avec base de données sportive locale et internationale
+                    </p>
+                    <div class="flex items-center text-green-400">
+                        <i class="fas fa-check-circle mr-2"></i>
+                        <span class="text-sm font-semibold">Disponible</span>
+                    </div>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:scale-105">
+                    <div class="w-16 h-16 bg-gradient-to-r from-indigo-500 to-indigo-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">API Sécurisée</h3>
+                    <p class="text-white/80 mb-4">
+                        API restreinte avec authentification Firebase et accès freemium/bêta contrôlé
+                    </p>
+                    <div class="flex items-center text-yellow-400">
+                        <i class="fas fa-cog mr-2"></i>
+                        <span class="text-sm font-semibold">En développement</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
+                    <div class="text-4xl font-bold text-green-400 mb-2">95%</div>
+                    <div class="text-white/80">Précision IA</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
+                    <div class="text-4xl font-bold text-blue-400 mb-2">50+</div>
+                    <div class="text-white/80">Championnats</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
+                    <div class="text-4xl font-bold text-yellow-400 mb-2">24/7</div>
+                    <div class="text-white/80">Mise à jour</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
+                    <div class="text-4xl font-bold text-purple-400 mb-2">1000+</div>
+                    <div class="text-white/80">Matchs analysés</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-black/20">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                        À propos de <span class="text-green-400">SmartANDJ</span>
+                    </h2>
+                    <p class="text-xl text-white/80 mb-6">
+                        Développé par <strong>SmartANDJ AI Technologies</strong>, notre mission est de démocratiser 
+                        l'analyse prédictive sportive en Afrique via une IA précise, multilingue et locale.
+                    </p>
+                    <p class="text-lg text-white/70 mb-8">
+                        Nous utilisons des technologies de pointe comme XGBoost, TensorFlow et des modèles LSTM 
+                        pour offrir des prédictions sportives de haute qualité, accessibles à tous.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="bg-white/10 backdrop-blur-md rounded-full px-6 py-3 border border-white/20">
+                            <span class="text-white font-semibold">Python</span>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-md rounded-full px-6 py-3 border border-white/20">
+                            <span class="text-white font-semibold">TensorFlow</span>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-md rounded-full px-6 py-3 border border-white/20">
+                            <span class="text-white font-semibold">React</span>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-md rounded-full px-6 py-3 border border-white/20">
+                            <span class="text-white font-semibold">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-gradient-to-r from-blue-500/20 to-green-500/20 rounded-3xl p-8 backdrop-blur-md border border-white/20">
+                        <div class="text-center">
+                            <div class="w-32 h-32 bg-gradient-to-r from-blue-500 to-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <i class="fas fa-user-tie text-white text-5xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-2">Daniel Jonathan ANDJ</h3>
+                            <p class="text-white/80 mb-4">Fondateur & Data Scientist</p>
+                            <p class="text-white/70 text-sm">
+                                Visionnaire de l'IA gabonaise, créateur de SmartANDJ Predictor
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                Prêt à découvrir l'<span class="text-green-400">avenir</span> des prédictions sportives ?
+            </h2>
+            <p class="text-xl text-white/80 mb-8">
+                Rejoignez notre liste d'attente pour l'accès bêta et soyez parmi les premiers à tester notre IA révolutionnaire
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
+                <input type="email" placeholder="Votre email" class="flex-1 px-6 py-4 rounded-full bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-green-400">
+                <button class="bg-gradient-to-r from-blue-600 to-green-600 text-white px-8 py-4 rounded-full font-semibold hover:from-blue-700 hover:to-green-700 transition-all duration-300 transform hover:scale-105">
+                    S'inscrire
+                </button>
+            </div>
+            <p class="text-white/60 text-sm mt-4">
+                <i class="fas fa-shield-alt mr-2"></i>
+                Vos données sont protégées et ne seront jamais partagées
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-black/40 backdrop-blur-md border-t border-white/10 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-green-500 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-brain text-white text-xl"></i>
+                        </div>
+                        <span class="text-white text-xl font-bold">SmartANDJ Predictor</span>
+                    </div>
+                    <p class="text-white/70 mb-4">
+                        L'IA qui révolutionne les prédictions sportives en Afrique et dans le monde.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
+                            <i class="fab fa-twitter text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
+                            <i class="fab fa-linkedin text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
+                            <i class="fab fa-github text-white"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Contact</h3>
+                    <div class="space-y-2 text-white/70">
+                        <p><i class="fas fa-envelope mr-2"></i> contact@smartandjai.com</p>
+                        <p><i class="fab fa-whatsapp mr-2"></i> +241 655 158 77</p>
+                        <p><i class="fas fa-globe mr-2"></i> smartandjai.com</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Légal</h3>
+                    <div class="space-y-2 text-white/70">
+                        <p class="text-sm">
+                            <i class="fas fa-exclamation-triangle mr-2"></i>
+                            Ce projet ne constitue pas un conseil de pari. Les prédictions sont issues d'un système algorithmique en test. Jouez responsable.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white/10 mt-8 pt-8 text-center text-white/60">
+                <p>&copy; 2025 SmartANDJ AI Technologies. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('bg-black/40');
+            } else {
+                nav.classList.remove('bg-black/40');
+            }
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all feature cards
+        document.querySelectorAll('.bg-white\\/10').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+
+    <style>
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fade-in 0.6s ease-out forwards;
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #1e293b;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, #3b82f6, #10b981);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(to bottom, #2563eb, #059669);
+        }
+    </style>
+</body>
+</html>
